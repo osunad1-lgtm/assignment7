@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Design Inquiry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+<style>
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1000px;
+        height: auto;
+        background: #0E1A74 ;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px gray;
+        margin: 0 auto;
+    } main {
+        width: 80%;
+        height: auto;
+        margin: 36px auto;
+    } header img {
+        width: 100%;
+        margin-bottom: 24px;
+    }  h1 {
+        font: 48pt/1.4em 'Redaction 35';
+        text-align: center;
+        margin-top: 24px;
+		color: #FFFFFF
+	} h2 { 
+	font: 18pt/1.4em 'Basic';
+	text-align: center;
+		color: #FFFFFF;
+		background-color: #477DB4
+	}
+
+    } form {
+        width: 700px;
+        margin: 2 auto;
+        border-radius: 14px;
+        background: rgba(125,147,151,0.50);
+        padding: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+		background-color: #477DB4;
+    } #personal input {
+		font: "Basic";
+        width: 100%;
+        height: 35px;
+		margin-bottom: 3px;
+		color:#FFFFFF
+    } #personal textarea {
+        width: 100%;
+    } label {
+		font: 14pt/1.4em 'Basic';
+		color: #FFFFFF;
+        margin-top: 12px;
+    } select, input[type="submit"] {
+        font: 12pt/1.4em Roboto;
+    } input[type="submit"] {
+        width: 200px;
+        height: 40px;
+        margin: 24px auto;
+        background: #6693FF;
+        border-radius: 6px;
+    } input[type="submit"]:hover {
+        opacity: 0.75;
+		font: "Basic";
+	} textarea {
+		font: 14pt/1.4em "Basic";
+    } fieldset {
+        margin: 8px 0 8px 0;
+        padding: 12px;
+		
+	} select {
+		width: 50%;
+	} option {
+		padding: 3px 6px;
+		background: #FFFFFF;
+	}
+</style>
+<script language="JavaScript">
+    function toggle(source) {
+        checkboxes = document.getElementsByName('trips');
+        for(var checkbox in checkboxes)
+        checkboxes[checkbox].checked = source.checked;
+    }
+</script>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <img src="portfoliobanner.png" />
+        
+            <h1>Get in Touch With Me</h1>
+			
+			<h2> If you're interested in comissioning me for designs, please fill out the following form with accurate information. Requests will be followed-up on in a timely manner! </h2>
+        </header>
+        <main>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="6ea120b7-cd45-45b2-9d04-d25d239c2088">
+
+        <div id="personal">        
+            <label>First & Last Name</label>
+            <input type="text" name="name">
+            <label>Company Name (If applicable)</label>
+            <input type="text" name="name">
+			<label>Telephone Number</label>
+            <input type="email" name="email">
+            <label>Email</label>
+            <input type="email" name="email">
+            <label>What would you like to design? (i.e; logo, branding, flyers, etc.)</label>
+            <input type="text" name="subject">
+            <label>Tell me more</label>
+            <textarea name="message" rows="4" cols="72" placeholder="&nbsp;Write message here."></textarea>
+       
+  
+        </fieldset>           
+    <input type="submit" value="Submit">
+</form>
+</main>
+</div>
+</body>
+</html>
